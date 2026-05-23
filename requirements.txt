@@ -1,0 +1,9 @@
+ultralytics>=8.0.0
+paddleocr>=2.7.0
+paddlepaddle>=2.5.0
+roboflow>=1.1.0
+kaggle>=1.6.0
+huggingface_hub>=0.20.0
+opencv-python>=4.8.0
+pyyaml>=6.0
+numpy>=1.24.0
