@@ -1,9 +1,4 @@
-# Course Project: Traffic Rule Violation Detection (AID 728)
-
-**Team 24**
-* **Shivansh Shah** (BT2024243)
-* **Advaya Bhardwaj** (BT2024231)
-* **Aman Lahoti** (BT2024123)
+# Course Project: Traffic Rule Violation Detection
 
 ## 📌 Project Overview
 This project implements a modular, highly efficient computer vision pipeline to detect traffic rule violations involving two-wheelers. The system processes RGB street images entirely **offline** and under strict resource constraints (Total Models < 250 MB).
