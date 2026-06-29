@@ -8,22 +8,6 @@ It detects the following violations:
 2. One or more riders not wearing a helmet.
 3. Automatically extracts and reads the **license plate (registration number)** of any violating vehicle using OCR.
 
-## 📁 Repository Structure
-To evaluate, the directory must follow the exact structure outlined in the guidelines:
-```text
-<ROLL_NUMBER>/
-│
-├── solution.py                 # Core evaluation script containing TrafficViolationDetector
-├── requirements.txt            # Python dependencies (Ultralytics, PaddleOCR, etc.)
-├── README.md                   # Project documentation
-├── download_ocr_models.sh      # Script to download offline PaddleOCR weights if missing
-└── models/                     # Weights directory (Must be < 250 MB combined)
-    ├── yolov8m.pt              # Base generalized feature extractor (Bikes & Persons)
-    ├── model2_helmet_plate.pt  # Custom-trained YOLOv8n (Helmets & License Plates)
-    ├── en_PP-OCRv3_det_infer/  # PaddleOCR text detection offline weights
-    ├── en_PP-OCRv4_rec_infer/  # PaddleOCR text recognition offline weights
-    └── ch_ppocr_mobile_v2.0_cls_infer/ # PaddleOCR angle classifier offline weights
-```
 *(Note: Evaluators may find fallback weights such as `yolov8s.pt` to guarantee execution if memory is severely constrained.)*
 
 **📥 Model Weights Download (Backup):**
